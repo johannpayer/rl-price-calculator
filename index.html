@@ -1,0 +1,88 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<script src="script.js"></script>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Rocket League Price Calculator</title>
+</head>
+<body>
+<div id="main">
+    <p class="header">Item Type</p>
+    <label for="itemType"></label>
+    <select id="itemType" class="input" onchange="update()">
+        <option>Antenna</option>
+        <option>Black Market Decal</option>
+        <option>Boost</option>
+        <option>Car</option>
+        <option>Decal</option>
+        <option>Goal Explosion</option>
+        <option>Topper</option>
+        <option>Trail</option>
+        <option>Wheel</option>
+    </select>
+    <label for="dropType"></label>
+    <select id="dropType" class="input" onclick="changeDropType(); update()">
+        <option>Standard Drop</option>
+        <option>Painted-only Drop</option>
+        <option>Premium Drop</option>
+    </select>
+    <p class="header">Base Item Value</p>
+    <label for="baseValue"></label>
+    <input id="baseValue" class="input" onchange="update()" max="100000" min="10" step="10" type="number" value="10">
+    <p class="header" id="unpaintedText">Unpainted Item Value</p>
+    <label for="unpaintedValue"></label>
+    <input id="unpaintedValue" class="input" onchange="update()" max="100000" min="0" step="10" type="number"
+           value="10">
+    <p id="blueprintText" class="header">Blueprint</p>
+    <label for="blueprint"></label>
+    <select id="blueprint" class="input" onchange="blueprintChange(); update()">
+        <option>None</option>
+        <option>Rare</option>
+        <option>Very Rare</option>
+        <option>Import</option>
+        <option>Exotic</option>
+        <option>Black Market</option>
+    </select>
+    <label for="paint"></label>
+    <select id="paint" class="input" onchange="update()" hidden>
+        <option>Default</option>
+        <option>Black</option>
+        <option>Titanium White</option>
+        <option>Grey</option>
+        <option>Crimson</option>
+        <option>Pink</option>
+        <option>Cobalt</option>
+        <option>Sky Blue</option>
+        <option>Burnt Sienna</option>
+        <option>Saffron</option>
+        <option>Lime</option>
+        <option>Forest Green</option>
+        <option>Orange</option>
+        <option>Purple</option>
+    </select>
+    <button class="input" id="blueprintEdition" onclick="toggleEdition(); update()" hidden></button>
+    <p class="header">Certification Type</p>
+    <label for="cerificationType"></label>
+    <select id="cerificationType" class="input" onchange="update()">
+        <option>None</option>
+        <option>Striker</option>
+        <option>Scorer</option>
+        <option>Victor</option>
+        <option>Goalkeeper</option>
+        <option>Sniper</option>
+        <option>Tactician</option>
+        <option>Sweeper</option>
+        <option>Playmaker</option>
+        <option>Guardian</option>
+        <option>Aviator</option>
+        <option>Acrobat</option>
+        <option>Turtle</option>
+        <option>Paragon</option>
+        <option>Show-off</option>
+        <option>Juggler</option>
+    </select>
+    <p id="value">Error</p>
+</div>
+</body>
+</html>
