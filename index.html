@@ -34,34 +34,10 @@
     <label for="unpaintedValue"></label>
     <input id="unpaintedValue" class="input" onchange="update()" max="100000" min="0" step="10" type="number"
            value="10">
-    <p id="blueprintText" class="header">Blueprint</p>
-    <label for="blueprint"></label>
-    <select id="blueprint" class="input" onchange="blueprintChange(); update()">
-        <option>None</option>
-        <option>Rare</option>
-        <option>Very Rare</option>
-        <option>Import</option>
-        <option>Exotic</option>
-        <option>Black Market</option>
-    </select>
-    <label for="paint"></label>
-    <select id="paint" class="input" onchange="update()" hidden>
-        <option>Default</option>
-        <option>Black</option>
-        <option>Titanium White</option>
-        <option>Grey</option>
-        <option>Crimson</option>
-        <option>Pink</option>
-        <option>Cobalt</option>
-        <option>Sky Blue</option>
-        <option>Burnt Sienna</option>
-        <option>Saffron</option>
-        <option>Lime</option>
-        <option>Forest Green</option>
-        <option>Orange</option>
-        <option>Purple</option>
-    </select>
-    <button class="input" id="blueprintEdition" onclick="toggleEdition(); update()" hidden></button>
+    <p id="blueprintText" class="header">Blueprint Redemption Cost</p>
+    <label for="blueprintPrice"></label>
+    <input id="blueprintPrice" class="input" onchange="update()" max="100000" min="10" step="10" type="number"
+           value="10">
     <p class="header">Certification Type</p>
     <label for="cerificationType"></label>
     <select id="cerificationType" class="input" onchange="update()">
