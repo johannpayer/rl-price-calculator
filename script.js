@@ -38,7 +38,9 @@ function changeDropType() {
     if (onlyPaintedDrop)
         isSpecialEdition = false;
 
-    blueprintText.hidden = dropType.value === 'Premium Drop';
+    const isPremium = dropType.value === 'Premium Drop';
+    blueprintText.hidden = isPremium;
+    blueprintPrice.hidden = isPremium;
 }
 
 let isSpecialEdition = false;
