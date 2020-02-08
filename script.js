@@ -62,8 +62,9 @@ function update() {
     else if (onlyPaintedDrop)
         colorMultiplier *= 0.25;
     let value = (certificationMultiplier === undefined ? baseValue.value : baseValue.value *
-        (certificationMultiplier * (colorMultiplier + 1) + 1)) -
-        blueprintPrice.value;
+        (certificationMultiplier * (colorMultiplier + 1) + 1));
+    if (!blueprintPrice.hidden)
+        value -= blueprintPrice.value;
 
     value = Math.floor(value / 10) * 10;
     text.innerHTML = value + ' credits';
