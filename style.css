@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400');
 
-p {
+span {
     color: white;
     font-size: 2em;
-    margin: 10px;
+    margin: 6px;
 }
 
 body {
@@ -14,9 +14,9 @@ body {
 
 .input {
     font-family: inherit;
-    border: 1px solid black;
-    padding: 15px 20px;
-    margin: 0 0 4px;
+    border: none;
+    padding: 16px 20px;
+    margin: 0 0 6px;
     border-radius: 2px;
     background-color: #1b1c22;
     color: white;
@@ -31,10 +31,10 @@ body {
     min-height: 100vh;
 }
 
-#value {
+#itemValue {
     padding-top: 20px;
 }
 
 .header {
-    margin-bottom: 15px;
+    margin-bottom: 16px;
 }
