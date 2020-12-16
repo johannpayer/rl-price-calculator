@@ -86,7 +86,10 @@ window.addEventListener('load', () => {
       colorMultiplier *= 0.25;
     }
 
-    let value = baseValue.value * (certificationMultiplier ? certificationMultiplier * (colorMultiplier + 1) + 1 : 1);
+    let value = baseValue.value;
+    if (certificationMultiplier) {
+      value *= certificationMultiplier * (colorMultiplier + 1) + 1;
+    }
     if (!blueprintPrice.hidden) {
       value -= blueprintPrice.value;
     }
