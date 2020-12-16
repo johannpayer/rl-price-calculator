@@ -1,6 +1,6 @@
 <!DOCTYPE HTML>
 <html lang="en">
-<script src="script.js"></script>
+<script src="./script.js"></script>
 
 <head>
   <meta charset="utf-8">
@@ -11,77 +11,58 @@
   >
   <link
     rel="stylesheet"
-    href="style.css"
+    href="./style.css"
   >
 </head>
 
 <body>
   <div id="main">
-    <span class="header">Item Type</span>
-    <select
-      id="itemType"
-      class="input"
-    >
+    <span>Item Type</span>
+    <select id="itemType">
       <option>Antenna</option>
-      <option>Black Market Decal</option>
+      <option>Black market decal</option>
       <option>Boost</option>
       <option>Car</option>
       <option>Decal</option>
-      <option>Goal Explosion</option>
+      <option>Goal explosion</option>
       <option>Topper</option>
       <option>Trail</option>
       <option>Wheel</option>
     </select>
-    <select
-      id="dropType"
-      class="input"
-    >
-      <option>Standard Drop</option>
-      <option>Painted-only Drop</option>
-      <option>Premium Drop</option>
+    <select id="dropType">
+      <option>Standard drop</option>
+      <option>Painted-only drop</option>
+      <option>Premium drop</option>
     </select>
-    <span class="header">Base Item Value</span>
+    <span>Base Item Value</span>
     <input
       id="baseValue"
-      class="input"
       type="number"
       min=10
       max=100000
       step=10
       value=10
     >
-    <span
-      class="header"
-      id="unpaintedText"
-    >
-Unpainted Item Value
-    </span>
+    <span id="unpaintedText">Unpainted Item Value</span>
     <input
       id="unpaintedValue"
-      class="input"
       type="number"
       min=10
       max=100000
       step=10
       value=10
     >
-    <span
-      id="blueprintText"
-      class="header"
-    >
-Blueprint Redemption Cost
-    </span>
+    <span id="blueprintText">Blueprint Redemption Cost</span>
     <input
       id="blueprintPrice"
-      class="input"
       type="number"
       min=10
       max=100000
       step=10
       value=0
     >
-    <span class="header">Certification Type</span>
-    <select id="cerificationType" class="input">
+    <span>Certification Type</span>
+    <select id="certificationType">
       <option>None</option>
       <option>Striker</option>
       <option>Scorer</option>
