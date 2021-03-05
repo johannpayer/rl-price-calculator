@@ -1,87 +1,80 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="en">
-<script src="./script.js"></script>
+  <script src="./script.js"></script>
 
-<head>
-  <meta charset="utf-8">
-  <title>Rocket League Price Calculator</title>
-  <link
-    href="./icon.png"
-    rel="icon"
-  >
-  <link
-    href="./style.css"
-    rel="stylesheet"
-  >
-</head>
+  <head>
+    <meta charset="utf-8" />
+    <title>Rocket League Price Calculator</title>
+    <link href="./icon.png" rel="icon" />
+    <link href="./style.css" rel="stylesheet" />
+  </head>
 
-<body>
-  <div id="main">
-    <span>Item Type</span>
-    <select id="itemType">
-      <option>Antenna</option>
-      <option>Black market decal</option>
-      <option>Boost</option>
-      <option>Car</option>
-      <option>Decal</option>
-      <option>Goal explosion</option>
-      <option>Topper</option>
-      <option>Trail</option>
-      <option>Wheel</option>
-    </select>
-    <select id="dropType">
-      <option>Standard drop</option>
-      <option>Painted-only drop</option>
-      <option>Premium drop</option>
-    </select>
-    <span>Base Item Value</span>
-    <input
-      id="baseValue"
-      type="number"
-      min=10
-      max=100000
-      step=10
-      value=10
-    >
-    <span id="unpaintedText">Unpainted Item Value</span>
-    <input
-      id="unpaintedValue"
-      type="number"
-      min=10
-      max=100000
-      step=10
-      value=10
-    >
-    <span id="blueprintText">Blueprint Redemption Cost</span>
-    <input
-      id="blueprintPrice"
-      type="number"
-      min=10
-      max=100000
-      step=10
-      value=0
-    >
-    <span>Certification Type</span>
-    <select id="certificationType">
-      <option>None</option>
-      <option>Striker</option>
-      <option>Scorer</option>
-      <option>Victor</option>
-      <option>Goalkeeper</option>
-      <option>Sniper</option>
-      <option>Tactician</option>
-      <option>Sweeper</option>
-      <option>Playmaker</option>
-      <option>Guardian</option>
-      <option>Aviator</option>
-      <option>Acrobat</option>
-      <option>Turtle</option>
-      <option>Paragon</option>
-      <option>Show-off</option>
-      <option>Juggler</option>
-    </select>
-    <span id="itemValue">Error</span>
-  </div>
-</body>
-
+  <body>
+    <div id="main">
+      <span>Item Type</span>
+      <select id="itemType">
+        <option>Antenna</option>
+        <option>Black market decal</option>
+        <option>Boost</option>
+        <option>Car</option>
+        <option>Decal</option>
+        <option>Goal explosion</option>
+        <option>Topper</option>
+        <option>Trail</option>
+        <option>Wheel</option>
+      </select>
+      <select id="dropType">
+        <option>Standard drop</option>
+        <option>Painted-only drop</option>
+        <option>Premium drop</option>
+      </select>
+      <span>Base Item Value</span>
+      <input
+        id="baseValue"
+        type="number"
+        min="10"
+        max="100000"
+        step="10"
+        value="10"
+      />
+      <span id="unpaintedText">Unpainted Item Value</span>
+      <input
+        id="unpaintedValue"
+        type="number"
+        min="10"
+        max="100000"
+        step="10"
+        value="10"
+      />
+      <span id="blueprintText">Blueprint Redemption Cost</span>
+      <input
+        id="blueprintPrice"
+        type="number"
+        min="10"
+        max="100000"
+        step="10"
+        value="0"
+      />
+      <span>Certification Type</span>
+      <select id="certificationType">
+        <option>None</option>
+        <option>Striker</option>
+        <option>Scorer</option>
+        <option>Victor</option>
+        <option>Goalkeeper</option>
+        <option>Sniper</option>
+        <option>Tactician</option>
+        <option>Sweeper</option>
+        <option>Playmaker</option>
+        <option>Guardian</option>
+        <option>Aviator</option>
+        <option>Acrobat</option>
+        <option>Turtle</option>
+        <option>Paragon</option>
+        <option>Show-off</option>
+        <option>Juggler</option>
+      </select>
+      <span id="itemValue">Error</span>
+    </div>
+  </body>
 </html>

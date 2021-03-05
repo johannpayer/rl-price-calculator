@@ -13,7 +13,8 @@ span {
   margin-bottom: 16px;
 }
 
-input, select {
+input,
+select {
   color: white;
   font-family: inherit;
   border: none;
